@@ -1,0 +1,12 @@
+/*
+  DIAGNOSTIC STYLING
+*/
+body {
+  background: gray;
+}
+
+* {
+  outline: 1px dotted black;
+}
+
+/* Your Awesome Scripts */
