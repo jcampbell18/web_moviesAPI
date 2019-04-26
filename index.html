@@ -3,12 +3,13 @@
 <head>
 
 <!-- Page Title -->
-    <title>Web 2 Starter</title>
+    <title>Project 1: AJAX-JSON-API</title>
 
 <!-- Metadata -->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Valdyn Hunt and Jason Campbell"/>
 
 <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"/>
@@ -26,11 +27,33 @@
 <!-- My Awesome Styling -->
     <link rel="stylesheet" href="css/styles.css"/>
 
+<!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville"/>
+
 </head>
 
 <body>
     
-    <h1>Web 2 Starter</h1>
+    <div id="container">
+        <header>
+            <h1>Movie Database Search</h1>
+            <h5>by Valdyn Hunt &amp; Jason Campbell</h5>
+        </header>
+        <nav>
+            <form id="main" action="">
+                <label for="search">Search</label>
+                <input type="search" id="search" placeholder="by Movie title or IMDB ID" name="q" aria-label="Search by movie title or IMDB id">
+                <<input id="submit" type="submit" value="search">
+              </form>
+        </nav>
+        <main>
+            <div id="app"><!--  JSON Data  --></div>
+        </main>
+        <footer>
+            Copyright &copy;<span class="currentYear">YEAR</span>, Valdyn Hunt &amp; Jason Campbell. All rights reserved.
+        </footer>
+    </div>
 
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
