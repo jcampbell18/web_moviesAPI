@@ -102,7 +102,7 @@ nav form input[type="search"] {
   border: 1px solid var(--tertiary-color);
   border-radius: 10px;
   padding: 0.8em;
-
+  margin-bottom: 1em;
 }
 
 nav form input[type="submit"] {
@@ -118,6 +118,15 @@ nav form input[type="submit"] {
 
 /***** MAIN *****/
 main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+
+}
+
+main section.movie {
 
 }
 
