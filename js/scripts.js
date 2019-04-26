@@ -23,18 +23,24 @@ let doStuff = function(data) {
   for ( let ix = 0; ix < max; ix++ ) {
     
     let title = res[ix].Title;
-    let img = res[ix].Poster;
     let year = res[ix].Year;
     let imdbLink = res[ix].imdbID;
+    let img = res[ix].Poster;
   
     const template = `
-      <h3>${ title }</h3>
-      <img src="${ img }" alt="${ title }" title="${ title }"/>
-      <p>(${ year })</p>
-      <p><a href="${ imdbLink }" target="_blank">IMDB</a></p>
+      <section>  
+        <img src="${ img }" alt="Poster of ${ title }" title="Poster of ${ title }"/>
+        <div class="movie-info">
+            <p class="title">${ title }</p>
+            <p class="year">${ year }</p>
+            <p class="imdb">
+                <a href="http://imdb.com/title/${ imdbLink }" target="_blank">IMDB</a>
+            </p>
+        </div>
+        </section>
     `;  
 
-    $('#app').append( template ); 
+    $('main').append( template ); 
 
   } 
   
@@ -42,8 +48,8 @@ let doStuff = function(data) {
 
 $('#submit').click(function(event){
 
-    $('#app').empty();
+    $('main').empty();
     event.preventDefault(); // cancel default behavior
     $.getJSON( url, doStuff);
-    
+
 });
