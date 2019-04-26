@@ -6,7 +6,7 @@ brought to you by team Two Wrongs Make A Right (Valydn Hunt & Jason Campbell)
 ## Dependencies
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
 * [jQuery Libary](https://jquery.com)
-* [OMDB API](ttp://www.omdbapi.com/)
+* [OMDB API](http://www.omdbapi.com/)
 
 ## Image Credit
 * [from Unsplash - 8mm filmroll](https://unsplash.com/photos/WevidclYpdc)
