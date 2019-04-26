@@ -46,6 +46,7 @@ let doStuff = function(data) {
   
 };
 
+// Search button
 $('#submit').click(function(event){
 
     $('main').empty();
