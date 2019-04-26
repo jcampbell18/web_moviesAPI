@@ -7,6 +7,9 @@ brought to you by team Two Wrongs Make A Right (Valydn Hunt & Jason Campbell)
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
 * [jQuery Libary](https://jquery.com)
 
+## Image Credit
+* [from Unsplash - 8mm filmroll](https://unsplash.com/photos/WevidclYpdc)
+
 ### Design Process
 
 #### Design System
