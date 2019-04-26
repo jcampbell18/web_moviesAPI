@@ -193,11 +193,16 @@ main section p.imdb {
 
 /***** FOOTER *****/
 footer {
-  background: white;
+  background-image: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
   font-size: 0.9em;
   color: var(--primary-color);
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2em 0 0.6em 0;
+  padding: 0.6em 0 0.6em 0;
 }
