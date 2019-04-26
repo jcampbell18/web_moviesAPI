@@ -1,12 +1,132 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
+/**** VARIABLES (Color Palette) ****/
+:root {
+  --primary-color: #18121E;
+  --secondary-color: #233237;
+  --tertiary-color: #984B43;
+  --quaternary-color: #EAC67A;
 }
+
+
+/***** HTML *****/
 
 * {
-  outline: 1px dotted black;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-/* Your Awesome Scripts */
+body {
+  width: 100%;
+  background: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 3.272em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 2.023em;
+}
+
+h4 {
+  font-size: 1.618em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+p {
+  font: 1.0em 'Libre Baskerville', serif;
+}
+
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: var(--quaternary-color);
+}
+
+/***** CONTAINER *****/
+div#container {
+  width: 75%;
+  margin: 0 auto;
+  background: url('../img/denise-jans-1149938-unsplash.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+
+/***** HEADER *****/
+header {
+  text-align: right;
+  padding-bottom: 3em;
+}
+
+/***** NAV *****/
+nav {
+  width: 30%;
+  margin: 0 auto;
+  background: var(--secondary-color);
+  border: 1px solid var(--quaternary-color);
+  border-radius: 10px;
+  padding: 1.25em;
+}
+
+nav form {
+  display: flex;
+  flex-direction: column;
+}
+
+nav form label {
+  font-size: 2.023em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--quaternary-color);
+  padding-bottom: 0.2em;
+}
+
+nav form input[type="search"] {
+  background: white;
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: 0.8em;
+
+}
+
+nav form input[type="submit"] {
+  width: 20%;
+  align-self: flex-end;
+  background: var(--quaternary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: 0.8em;
+
+}
+
+/***** MAIN *****/
+main {
+
+}
+
+/***** FOOTER *****/
+footer {
+  font-size: 0.9em;
+  color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 0.6em 0;
+}
