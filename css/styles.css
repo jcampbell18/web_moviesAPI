@@ -118,20 +118,82 @@ nav form input[type="submit"] {
 
 /***** MAIN *****/
 main {
+  width:50%;
+  margin: 3em auto;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 main section {
+  background: var(--secondary-color);
+  border: 1px solid var(--quaternary-color);
+  border-radius: 10px;
+  padding: 1.25em;
 
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-main section.movie {
+main section img {
+  grid-row: 1;
+  grid-column: 1;
 
+  max-width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
 }
+
+main section div.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main section p {
+  border: 1px solid var(--quaternary-color);
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+main section p.title {
+  grid-row: 1;
+  grid-column: 2;
+
+  background: white;
+  color: var(--primary-color);
+}
+
+main section p.year {
+  grid-row: 1;
+  grid-column: 2;
+
+  width: 15%;
+  background: var(--tertiary-color);
+  color: white;
+}
+
+main section p.imdb {
+  grid-row: 1;
+  grid-column: 2;
+
+  width: 15%;
+  background: var(--tertiary-color);
+  color: var(--quaternary-color);
+}
+
 
 /***** FOOTER *****/
 footer {
+  background: white;
   font-size: 0.9em;
   color: var(--primary-color);
   width: 100%;
