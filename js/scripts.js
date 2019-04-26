@@ -28,15 +28,15 @@ let doStuff = function(data) {
     let img = res[ix].Poster;
   
     const template = `
-      <section>  
-        <img src="${ img }" alt="Poster of ${ title }" title="Poster of ${ title }"/>
-        <div class="movie-info">
-            <p class="title">${ title }</p>
-            <p class="year">${ year }</p>
-            <p class="imdb">
-                <a href="http://imdb.com/title/${ imdbLink }" target="_blank">IMDB</a>
-            </p>
-        </div>
+        <section>  
+            <img src="${ img }" alt="Poster of ${ title }" title="Poster of ${ title }"/>
+            <div class="movie-info">
+                <p class="title">${ title }</p>
+                <p class="year">${ year }</p>
+                <p class="imdb">
+                    <a href="http://imdb.com/title/${ imdbLink }" target="_blank">IMDB</a>
+                </p>
+            </div>
         </section>
     `;  
 
