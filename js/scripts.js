@@ -29,7 +29,6 @@ let doStuff = function(data) {
   
     const template = `
         <section>  
-            <img src="${ img }" alt="Poster of ${ title }" title="Poster of ${ title }"/>
             <div class="movie-info">
                 <p class="title">${ title }</p>
                 <p class="year">${ year }</p>
@@ -37,6 +36,7 @@ let doStuff = function(data) {
                     <a href="http://imdb.com/title/${ imdbLink }" target="_blank">IMDB</a>
                 </p>
             </div>
+            <img src="${ img }" alt="Poster of ${ title }" title="Poster of ${ title }"/>
         </section>
     `;  
 
