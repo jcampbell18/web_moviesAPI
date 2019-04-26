@@ -15,7 +15,7 @@ let doStuff = function(data) {
   document.getElementById('search').value = '';
   
   var res = $(data.Search).filter(function (i, n){
-     return n.Title.includes(q) || n.imdbID == q;
+    return n.Title.includes(q) || n.Title.includes(q.toLowerCase()) || n.Title.includes(q.toUpperCase()) || n.Title.includes(toCapitalize(q)) || n.imdbID == q;
   });
 
   const max = res.length;
@@ -54,3 +54,35 @@ $('#submit').click(function(event){
     $.getJSON( url, doStuff);
 
 });
+
+// Capitalize word(s) of search term
+const toCapitalize = (str)  => {
+    
+  if (str.split(" ").length - 1 == 0) {
+
+      return str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase(); 
+
+  } else {
+
+      let arr = str.split(" ");
+      let newStr = "";
+
+      for (let ix = 0; ix < arr.length; ix++) {
+
+          arr[ix] = arr[ix].substring(0,1).toUpperCase() + arr[ix].substring(1).toLowerCase();
+
+          newStr = newStr + arr[ix];
+
+          if (ix < arr.length - 1) {
+
+              newStr = newStr + " ";
+
+          }
+
+      }
+
+      return newStr;
+
+  }
+
+}
