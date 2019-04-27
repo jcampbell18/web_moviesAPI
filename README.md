@@ -2,6 +2,7 @@
 brought to you by team Two Wrongs Make A Right (Valydn Hunt & Jason Campbell)
 
 * example of utilizing JSON-AJAX-API
+* [JSON file on GitHub Gist with LIMITED movie library](https://gist.github.com/jcampbell18/c8d7476b3367ee739ecb7b7757cc135b)
 
 ## Dependencies
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
