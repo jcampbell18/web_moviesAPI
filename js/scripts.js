@@ -6,7 +6,8 @@ $('.currentYear').text( (new Date).getFullYear() );
   CONFIGURE JSON CALL
 **********************************/ 
 // The API feed
-const url = 'https://gist.githubusercontent.com/jcampbell18/8b4cab8b820e61a7acc86e112af0e12c/raw/aa024380fbef9706b188a02589cecb13ebd0ff11/movies-v2.json';
+//const url = 'https://gist.githubusercontent.com/jcampbell18/8b4cab8b820e61a7acc86e112af0e12c/raw/aa024380fbef9706b188a02589cecb13ebd0ff11/movies-v2.json';
+const url = 'https://gist.githubusercontent.com/jcampbell18/c8d7476b3367ee739ecb7b7757cc135b/raw/9a66726b778fbc84b5d2cd88bef3dd303f063170/movies.json';
 
 // Do stuff with returned data
 let doStuff = function(data) {
