@@ -56,6 +56,7 @@ a, a:link, a:visited, a:hover {
   color: var(--quaternary-color);
 }
 
+
 /***** CONTAINER *****/
 div#container {
   min-width: 75%;
@@ -72,6 +73,15 @@ header {
   text-align: right;
   padding-bottom: 3em;
 }
+
+.text-outline {
+  text-shadow: 
+    1px  1px 1px white,
+   -1px -1px 1px white,
+   -1px  1px 1px white,
+    1px -1px 1px white; 
+}
+
 
 /***** NAV *****/
 nav {
@@ -196,6 +206,7 @@ footer {
   background-image: linear-gradient(
     to right, 
     rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0)
   );
