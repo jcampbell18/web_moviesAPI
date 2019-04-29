@@ -1,13 +1,11 @@
 // Output Current Year
 $('.currentYear').text( (new Date).getFullYear() );
 
-
 /**********************************
   CONFIGURE JSON CALL
 **********************************/ 
 // The API feed
-//const url = 'https://gist.githubusercontent.com/jcampbell18/8b4cab8b820e61a7acc86e112af0e12c/raw/aa024380fbef9706b188a02589cecb13ebd0ff11/movies-v2.json';
-const url = 'https://gist.githubusercontent.com/jcampbell18/c8d7476b3367ee739ecb7b7757cc135b/raw/9a66726b778fbc84b5d2cd88bef3dd303f063170/movies.json';
+const url = 'https://gist.githubusercontent.com/jcampbell18/0e1da3a85ff8698092a90357d39c0102/raw/000503a6cc57896feb008c47b20a9d8e3cfa77db/combined-movies.json';
 
 // Do stuff with returned data
 let doStuff = function(data) {
@@ -19,14 +17,25 @@ let doStuff = function(data) {
     return n.Title.includes(q) || n.Title.includes(q.toLowerCase()) || n.Title.includes(q.toUpperCase()) || n.Title.includes(toCapitalize(q)) || n.imdbID == q;
   });
 
-  const max = res.length;
+  var arr=[];
+  temp=res.filter((x, i)=> {
+    if (arr.some(el => el.imdbID === i.imdbID)) {
+      return arr;
+    }
+    arr.push(i);
+  })
+  
+  const max = arr.length;
+
+  console.log(res.length);
+  console.log(max);
  
   for ( let ix = 0; ix < max; ix++ ) {
     
-    let title = res[ix].Title;
-    let year = res[ix].Year;
-    let imdbLink = res[ix].imdbID;
-    let img = res[ix].Poster;
+    let title = arr[ix].Title;
+    let year = arr[ix].Year;
+    let imdbLink = arr[ix].imdbID;
+    let img = arr[ix].Poster;
   
     const template = `
         <section>  
