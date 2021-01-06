@@ -16,16 +16,16 @@ brought to you by team Two Wrongs Make A Right (Valydn Hunt & Jason Campbell)
 
 #### Design System
 
-![Design System](https://jcampbell18.github.io/moviesAPI/design/DesignSystem.png)
+![Design System](https://github.com/jcampbell18/web_moviesAPI/blob/master/design/DesignSystem.png)
 
 #### Wireframe
 
-![Design Wireframe](https://jcampbell18.github.io/moviesAPI/design/DesignWireframe.png)
+![Design Wireframe](https://github.com/jcampbell18/web_moviesAPI/blob/master/design/DesktopWireframe.png)
 
 #### Template
 
-![Design Template](https://jcampbell18.github.io/moviesAPI/design/DesignTemplate.png)
+![Design Template](https://github.com/jcampbell18/web_moviesAPI/blob/master/design/DesktopTemplate.png)
 
 #### Template (extended)
 
-![Design Template (extended)](https://jcampbell18.github.io/moviesAPI/design/DesignTemplate2.png)
+![Design Template (extended)](https://github.com/jcampbell18/web_moviesAPI/blob/master/design/DesktopTemplate2.png)
